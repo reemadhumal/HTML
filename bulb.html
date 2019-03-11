@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="bulb.js"></script>
+    <title>Document</title>
+
+    <style>
+     body{
+         text-align: center;
+         background-color: floralwhite;
+     }
+     button{
+         padding: 20px;
+     }
+    </style>
+</head>
+
+<body>
+    <h2>Let's change the below HTML attribute.</h2>
+    <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+    <button onclick="document.getElementById('bulb_img').src = 'pic_bulbon.gif'"> Turn on bulb</button>
+    <img id="bulb_img"   src="pic_bulboff.gif" alt="Bulb off" style="width: 100px;">
+    <button onclick="document.getElementById('bulb_img').src = 'pic_bulboff.gif'">Turn off light</button>
+
+</body>
+</html>
